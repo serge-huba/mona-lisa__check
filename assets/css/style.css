@@ -86,7 +86,7 @@ body {
     background-color: #030303;
 }
 
-.welcome__background {
+.slider__background {
     position: relative;
     background-image: url("../img/mona_lisa.png");
     background-repeat: no-repeat;
@@ -94,7 +94,119 @@ body {
     padding: 150px 0 272px 0;
 }
 
-.welcome__description {
+.slider-item__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+ }
+
+ .slider-item__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 25px 0 75px 0;
+ }
+
+ .slider-item__button {
+    display: block;
+    width: 360px;
+    height: 75px;
+    background-color: #710707;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 120px;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-scoreboard {
+    display: flex;
+    width: 76px;
+    justify-content: space-between;
+}
+
+.slider-pagination {
+    display: flex;
+    /* align-self: center; */
+    justify-content: space-between;
+    width: 180px;
+    height: 16px;
+    margin: 0px 55px 0 55px;
+}
+
+.slider-arrows {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+
+}
+
+.slider-paginataion__button {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    
+}
+
+
+
+.slider-arrows__item {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+.slider-scoreboard__item {
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slider-scoreboard__separator {
+    width: 2px;
+    height: 18px;
+    background-color: #FFFFFF;
+    align-self: center;
+}
+
+
+
+.slider-paginataion__button--active {
+    background: #D2B183;;
+}
+
+
+
+/* .welcome__description {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -194,7 +306,7 @@ body {
     height: 18px;
     background-color: #FFFFFF;
     align-self: center;
-}
+} */
  /*WElCOME STYLES END*/
 
  
