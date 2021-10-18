@@ -36,9 +36,9 @@
     </header>
     <main>
         <!-- ************************WELCOME STYLES START********************************** -->
-        <section class="welcome">
+        <section class="welcome section">
             <div class="container">
-                <div class="slider slider__background">
+                <div class="slider welcome__slider-background">
                     <div class="slider__list ">
                         <div class="slider__slider-item slider-item">
                             <h1 class="slider-item__title">Welcome<br>to the Louvre</h1>
@@ -53,19 +53,19 @@
                         </div> -->
                     </div>
                     <div class="slider__controls">
-                        <ul class="slider__slider-scoreboard slider-scoreboard"> 
+                        <ul class="slider__slider-scoreboard slider-scoreboard">
                             <li class="slider-scoreboard__item slider-scoreboard__current">01</li>
                             <li class="slider-scoreboard__item slider-scoreboard__separator"></li>
                             <li class="slider-scoreboard__item slider-scoreboard__total">05</li>
                         </ul>
-                        <div class="slider__slider-pagination slider-pagination"> 
-                            <button class="slider-paginataion__button"></button> 
+                        <div class="slider__slider-pagination slider-pagination">
+                            <button class="slider-paginataion__button slider-paginataion__button--active"></button>
                             <button class="slider-paginataion__button"></button>
                             <button class="slider-paginataion__button"></button>
                             <button class="slider-paginataion__button"></button>
                             <button class="slider-paginataion__button"></button>
                         </div>
-                        <div class="slider__slider-arrows slider-arrows"> 
+                        <div class="slider__slider-arrows slider-arrows">
                             <button class="slider-arrows__item">
                                 <svg width="30" height="8" viewBox="0 0 30 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -75,8 +75,8 @@
                                 </svg>
                             </button>
                             <button class="slider-arrows__item">
-                                <svg width="30" height="8" viewBox="0 0 30 8"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="30" height="8" viewBox="0 0 30 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M24.2775 1.97284e-06C26.0983 1.68661 28.0058 2.91738 30 3.69231L30 4.30769C28.0058 5.10541 26.0983 6.33618 24.2775 8L22.7601 8C23.6272 6.5641 24.4653 5.47009 25.2746 4.71795L3.48964e-07 4.71795L5.01636e-07 3.28205L25.2746 3.28205C24.4653 2.52992 23.6272 1.4359 22.7601 1.86378e-06L24.2775 1.97284e-06Z"
                                         fill="white" />
@@ -84,9 +84,89 @@
                             </button>
                             </li>
                         </div>
-                    </div>  <!--end slider__controls-->
+                    </div>
+                    <!--end slider__controls-->
                 </div>
             </div>
+        </section>
+
+        <!-- ************************VIRTUAL-TOUR STYLES START********************************** -->
+        
+        <section class="virtual-tour section">
+            <div class="container">
+                <h2 class="section__title  section__title--gold">virtual tour</h2>
+                <div class="virtual-tour__wrapper">
+                    <div class="virtual-tour__list">
+                        <div class="virtual-tour__item">
+                            <a href="" class="virtual-tour__link">
+                                <img class="virtual-tour__image" src="assets/img/rectangle.jpg" alt="">
+                                <div class="virtual-tour__title">royal palace</div>
+                                <div class="virtual-tour__desctiprion">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual-tour__item">
+                            <a href="">
+                                <img class="virtual-tour__image" src="assets/img/rectangle-1.jpg" alt="">
+                                <div class="virtual-tour__title">denon wing</div>
+                                <div class="virtual-tour__desctiprion">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual-tour__item virtual-tour__item--right">
+                            <a href="">
+                                <img class="virtual-tour__image" src="assets/img/rectangle-2.jpg" alt="">
+                                <div class="virtual-tour__title">colonnade perrault</div>
+                                <div class="virtual-tour__desctiprion">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual-tour__item virtual-tour__item--bottom">
+                            <a href="">
+                                <img class="virtual-tour__image" src="assets/img/rectangle-3.jpg" alt="">
+                                <div class="virtual-tour__title">Greek hall</div>
+                                <div class="virtual-tour__desctiprion virtual-tour__paragrafs">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual-tour__item virtual-tour__item--bottom">
+                            <a href="">
+                                <img class="virtual-tour__image" src="assets/img/rectangle-4.jpg" alt="">
+                                <div class="virtual-tour__title">Mona Lisa</div>
+                                <div class="virtual-tour__desctiprion virtual-tour__paragrafs">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="virtual-tour__item virtual-tour__item--right virtual-tour__item--bottom">
+                            <a href="">
+                                <img class="virtual-tour__image" src="assets/img/rectangle-5.jpg" alt="">
+                                <div class="virtual-tour__title">Night Palace</div>
+                                <div class="virtual-tour__desctiprion">
+                                    <p class="virtual-tour__paragraf">360° Virtual Tour</p>
+                                    <p class="virtual-tour__paragraf virtual-tour__paragraf--second">Google Street
+                                        Panorama View</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>

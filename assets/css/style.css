@@ -23,7 +23,7 @@ body {
 }
 
 .section {
-    padding: 75px 0 75px 0;
+    padding: 75px 0 0 0;
 }
 
 .section__title {
@@ -71,7 +71,7 @@ body {
 }
 
 .top-menu__item {
-    font-family: Roboto;
+    font-family: Roboto;/* наследуеться от body +3????*/
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -84,9 +84,10 @@ body {
 
 .welcome {
     background-color: #030303;
+    padding: 0;
 }
 
-.slider__background {
+.welcome__slider-background {
     position: relative;
     background-image: url("../img/mona_lisa.png");
     background-repeat: no-repeat;
@@ -200,113 +201,78 @@ body {
 
 
 
-.slider-paginataion__button--active {
-    background: #D2B183;;
+
+ .slider-paginataion__button--active{
+    background: #D2B183;
 }
 
+ /* VISITING STYLES START *********************************/
 
-
-/* .welcome__description {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-    margin: 25px 0 75px 0;
-}
-
-.welcome-section__button {
-    display: block;
-    width: 360px;
-    height: 75px;
-    background-color: #710707;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #FFFFFF;
-    border-radius: 15px;
-    border: none;
-    text-decoration: none;
-    padding: 25px;
-}
-
-.welcome__slider {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 600px;
-    height: 120px;
-    background-color: #030303;
-}
-
-.slider-menu {
+ .virtual-tour__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    /* column-gap: 60px;  */
 }
 
-.slider-menu__numbers {
-    display: flex;
-    width: 76px;
-    justify-content: space-between;
+.virtual-tour__item {
+    margin-right: 60px;
+    margin-bottom: 78px;
 }
 
-.slider-menu__switchs {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    width: 180px;
-    height: 16px;
-    margin: 0px 55px 0 55px;
+.virtual-tour__item--right {
+    margin-right: 0;
 }
 
-.slider-menu__arrows {
-    display: flex;
-    width: 80px;
-    justify-content: space-between;
-
+.virtual-tour__item--bottom {
+    margin-bottom: 0;
 }
 
-.slider-menu__numeric {
-    font-family: Roboto;
+.virtual-tour__title {
+    font-family: Forum;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    margin: 25px 0 0 0;
+    color: #000000;
 }
 
-.slider-menu__button {
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    border: 0;
-    
+.virtual-tour__link {
+    display: block;
 }
 
-.slider-menu__button--active {
-    background: #D2B183;;
+.virtual-tour__paragraf {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
 }
 
-.slider-menu__arrow {
-    padding: 0;
-    border: 0;
-    background-color: transparent;
+.virtual-tour__paragraf--second {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 10px 0 0 0;
 }
 
-.slider-menu__vertical {
-    width: 2px;
-    height: 18px;
-    background-color: #FFFFFF;
-    align-self: center;
-} */
- /*WElCOME STYLES END*/
+.virtual-tour__desctiprion {
+    margin: 10px 0 0 0;
+}
+
+.virtual-tour__title::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: #710707;
+    display: block;
+    margin: 9px 0 10px 0;
+}
+
+/* VISITING STYLES END */
+
+
 
  
