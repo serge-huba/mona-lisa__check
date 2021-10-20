@@ -145,7 +145,7 @@ body {
     justify-content: space-between;
 }
 
-.slider-menu__switchs {
+.slider-menu__switches {
     display: flex;
     align-self: center;
     justify-content: space-between;
@@ -196,7 +196,7 @@ body {
     align-self: center;
 }
 
- /* VISITING STYLES START *********************************/
+ /* VIRTUAL-TOUR STYLES START *********************************/
 
 .virtual-tour__list {
     display: flex;
@@ -261,11 +261,11 @@ body {
     margin: 9px 0 10px 0;
 }
 
-/* VISITING STYLES END */
+/*VIRTUAL-TOUR STYLES END */
 
 /*   EXPLORE  STYLES START************************************************************* */
 
-.explore-section {
+.picture-explore {
     background-color: #030303;
 }
 
