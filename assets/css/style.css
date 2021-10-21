@@ -26,7 +26,7 @@ body {
     padding: 75px 0 75px 0;
 }
 
-.section__title {
+.section-title {
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -37,12 +37,12 @@ body {
     color: #ffffff;
  }
 
-.section__title--gold {
+.section-title--gold {
     position: relative;
     color: #9D8665;
  }
 
-.section__title--gold::after {
+.section-title--gold::after {
     content: "";
     width: 100%;
     height: 3px;
@@ -80,7 +80,8 @@ body {
     color: #FFFFFF;
 }
 
-/******************************************WElCOME************************************************/
+
+/******************************************WElCOME STYLES START***********************/
 
 .welcome {
     background-color: #030303;
@@ -94,7 +95,18 @@ body {
     padding: 150px 0 272px 0;
 }
 
-.welcome__description {
+.slider-item__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+ }
+
+ .slider-item__description {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -103,9 +115,9 @@ body {
     letter-spacing: 2px;
     color: #FFFFFF;
     margin: 25px 0 75px 0;
-}
+ }
 
-.welcome-section__button {
+ .slider-item__button {
     display: block;
     width: 360px;
     height: 75px;
@@ -124,54 +136,41 @@ body {
     padding: 25px;
 }
 
-.welcome__slider {
+.slider__controls {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 600px;
     height: 120px;
     background-color: #030303;
-}
-
-.slider-menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slider-menu__numbers {
+.slider-scoreboard {
     display: flex;
     width: 76px;
     justify-content: space-between;
 }
 
-.slider-menu__switches {
+.slider-pagination {
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     justify-content: space-between;
     width: 180px;
     height: 16px;
     margin: 0px 55px 0 55px;
 }
 
-.slider-menu__arrows {
+.slider-arrows {
     display: flex;
     width: 80px;
     justify-content: space-between;
 
 }
 
-.slider-menu__numeric {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.slider-menu__button {
+.slider-paginataion__button {
     width: 16px;
     height: 16px;
     padding: 0;
@@ -179,21 +178,30 @@ body {
     
 }
 
-.slider-menu__button--active {
-    background: #D2B183;;
-}
-
-.slider-menu__arrow {
+.slider-arrows__item {
     padding: 0;
     border: 0;
     background-color: transparent;
 }
+.slider-scoreboard__item {
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
-.slider-menu__vertical {
+.slider-scoreboard__separator {
     width: 2px;
     height: 18px;
     background-color: #FFFFFF;
     align-self: center;
+}
+
+
+
+
+ .slider-paginataion__button--active{
+    background: #D2B183;;
 }
 
  /* VIRTUAL-TOUR STYLES START *********************************/
