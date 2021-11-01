@@ -1,0 +1,362 @@
+ /*ALL STYLES START************************************************************** */
+
+html {
+    box-sizing: border-box;
+ }
+
+ *, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #000000;
+ }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 75px 0 75px 0;
+}
+
+.section-title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+ }
+
+.section-title--gold {
+    position: relative;
+    color: #9D8665;
+ }
+
+ .section-title--white {
+    font-size: 80px;
+    line-height: 90px;
+    color: #FFFFFF;
+ }
+
+ .section-title::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
+
+/******************************************HEADER***********************************/
+
+.header{
+    background-color: #030303;
+    padding: 59px 0 58px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.top-menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+}
+
+.top-menu__item {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/******************************************WElCOME STYLES START***********************/
+
+.welcome {
+    background-color: #030303;
+}
+
+.welcome__background {
+    position: relative;
+    background-image: url("../img/mona_lisa.png");
+    background-repeat: no-repeat;
+    background-position:top right;
+    padding: 150px 0 272px 0;
+}
+
+.slider-item__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+ }
+
+ .slider-item__description {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 25px 0 75px 0;
+ }
+
+ .slider-item__button {
+    display: block;
+    width: 360px;
+    height: 75px;
+    background-color: #710707;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 120px;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-scoreboard {
+    display: flex;
+    width: 76px;
+    justify-content: space-between;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    height: 16px;
+    margin: 0px 55px 0 55px;
+}
+
+.slider-arrows {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+
+}
+
+.slider-pagination__button {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+}
+
+.top-menu__link {
+    color:#ffffff;
+}
+
+.slider-arrows__item {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.slider-scoreboard__item {
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slider-scoreboard__separator {
+    width: 2px;
+    height: 18px;
+    background-color: #FFFFFF;
+    align-self: center;
+}
+
+ .slider-pagination__button--active{
+    background: #D2B183;;
+}
+
+ /* VIRTUAL-TOUR STYLES START *********************************/
+
+.virtual-tour__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -78px 0;
+}
+
+ .virtual-tour__item {
+    margin: 78px 0;
+}
+
+.virtual-tour__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+    color: #000000;
+}
+
+.virtual-tour__link {
+    display: block;
+}
+
+.virtual-tour__description {
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 10px 0 0 0;
+}
+
+.virtual-tour__title::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: #710707;
+    display: block;
+    margin: 9px 0 10px 0;
+}
+
+/*VIRTUAL-TOUR STYLES END */
+
+/*   EXPLORE  STYLES START************************************************************* */
+
+.picture-explore {
+    background-color: #030303;
+}
+
+.picture-explore__list {
+    display: flex;
+}
+
+.picture-explore-compare {
+    padding-left: 60px;
+    position: relative;
+}
+
+.picture-explore__title::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
+
+.picture-explore-compare__image {
+    margin-top: 10px;
+}
+
+.picture-explore-compare__scroll-bar {
+    position: absolute;
+    right: 255px;
+    top: 11px;
+}
+
+.picture-explore-typography p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.picture-explore__pick-out {
+    color: #CAAA7D;
+}
+
+/*   EXPLORE  STYLES END */
+
+/*   VIDEO  STYLES START *****************************************************************/
+
+.journey-video__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.journey-video__title {
+    font-size: 80px;
+    line-height: 90px;
+    color: #9D8665;
+    width: 606px;
+}
+
+.journey-video__player {
+     margin-bottom: 40px;
+}
+
+.journey-video__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+    width: 720px;
+    padding: 5px 0 0 0;
+}
+
+.slider-video__rollers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.slider-video__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.slider-video__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999999;
+}
+
+.slider-video__button--active {
+    background-color: #333333;
+}
+
+.slider-video__button-arrow {
+    border: 0;
+    background-color: transparent;
+}
+
+/*   VIDEO  STYLES END */
