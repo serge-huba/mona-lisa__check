@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html           lang="ru">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
     <!-- *******************HEADER STYLES START********************************** -->
 
-    <header class="header ">
+    <header class="header section-background-dark">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -39,33 +39,33 @@
     <main>
 
         <!-- ************************WELCOME STYLES START********************************** -->
-        <section class="welcome">
+        <section class="welcome section-background-dark">
             <div class="container">
-                <div class="slider welcome__background">
+                <div class="slider theme-slider-welcome welcome__background">
                     <div class="slider__list">
-                        <div class="slider__slider-item slider-item">
-                            <h1 class="slider-item__title">Welcome<br>to the Louvre</h1>
-                            <p class="slider-item__description">From the castle to the museum</p>
-                            <a class="slider-item__button" href="#" target="_blank">Discover the Louvre</a>
+                        <div class="slide"> //лучше добавить отдельный класс типографика
+                            <h1 class="slide__title">Welcome<br>to the Louvre</h1>
+                            <p class="slide__description">From the castle to the museum</p>
+                            <a class="slide__button" href="#" target="_blank">Discover the Louvre</a>
                         </div>
-                        <div class="slider__controls">
-                            <ul class="slider__slider-scoreboard slider-scoreboard">
-                                <li class="slider-scoreboard__item slider-scoreboard__current">01</li>
-                                <li class="slider-scoreboard__item slider-scoreboard__separator"></li>
-                                <li class="slider-scoreboard__item slider-scoreboard__total">05</li>
+                        <div class="controls">
+                            <ul class="scoreboard">
+                                <li class="scoreboard__item scoreboard__current">01</li>
+                                <li class="scoreboard__item scoreboard__separator"></li>
+                                <li class="scoreboard__item scoreboard__total">05</li>
                             </ul>
-                            <div class="slider__slider-pagination slider-pagination">
-                                <button class="slider-pagination__button slider-pagination__button--active"></button>
-                                <button class="slider-pagination__button"></button>
-                                <button class="slider-pagination__button"></button>
-                                <button class="slider-pagination__button"></button>
-                                <button class="slider-pagination__button"></button>
+                            <div class="pagination">
+                                <button class="pagination__button pagination__button--active"></button>
+                                <button class="pagination__button"></button>
+                                <button class="pagination__button"></button>
+                                <button class="pagination__button"></button>
+                                <button class="pagination__button"></button>
                             </div>
-                            <div class="slider__slider-arrows slider-arrows">
-                                <button class="slider-arrows__item">
+                            <div class="nav">
+                                <button class="nav__item nav__item--left">
                                     <img src="assets/svg/left.svg" alt="left arrow" width="30" height="8">
                                 </button>
-                                <button class="slider-arrows__item">
+                                <button class="nav__item nav__item--right">
                                     <img src="assets/svg/right.svg" alt="right arrow" width="30" height="8">
                                 </button>
                             </div>
@@ -76,56 +76,56 @@
 
         <!-- VIRTUAL-TOUR STYLES START  -->
 
-        <section class="virtual-tour section">
+        <section class="section visiting">
             <div class="container">
                 <h2 class="section-title section-title--gold">virtual tour</h2>
-                <div class="virtual-tour__list">
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/arm.jpg" alt="royal palace"
+                <div class="visiting__list">
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/arm.jpg" alt="royal palace"
                                 width="440" height="285">
-                            <div class="virtual-tour-item__title">royal palace</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama
+                            <div class="visiting-item__title">royal palace</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama
                                 View</p>
                         </a>
                     </div>
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/rectangle-1.jpg" alt="denon wing"
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/rectangle-1.jpg" alt="denon wing"
                                 width="440" height="285">
-                            <div class="virtual-tour-item__title">denon wing</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
+                            <div class="visiting-item__title">denon wing</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
                         </a>
                     </div>
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/rectangle-2.jpg"
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/rectangle-2.jpg"
                                 alt="colonnade perrault" width="440" height="285">
-                            <div class="virtual-tour-item__title">colonnade perrault</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
+                            <div class="visiting-item__title">colonnade perrault</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
                         </a>
                     </div>
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/rectangle-3.jpg" alt="greek hall"
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/rectangle-3.jpg" alt="greek hall"
                                 width="440" height="285">
-                            <div class="virtual-tour-item__title">greek hall</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
+                            <div class="visiting-item__title">greek hall</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
                         </a>
                     </div>
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/rectangle-4.jpg" alt="mona lisa"
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/rectangle-4.jpg" alt="mona lisa"
                                 width="440" height="285">
-                            <div class="virtual-tour-item__title">mona lisa</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
+                            <div class="visiting-item__title">mona lisa</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
                         </a>
                     </div>
-                    <div class="virtual-tour-item virtual-tour__virtual-tour-item">
-                        <a href="" class="virtual-tour-item__link">
-                            <img class="virtual-tour-item__image" src="assets/img/rectangle-5.jpg" alt="night">
-                            <div class="virtual-tour-item__title">night palace</div>
-                            <p class="virtual-tour-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
+                    <div class="visiting-item">
+                        <a href="" class="visiting-item__link">
+                            <img class="visiting-item__image" src="assets/img/rectangle-5.jpg" alt="night">
+                            <div class="visiting-item__title">night palace</div>
+                            <p class="visiting-item__description">360° Virtual Tour<br><br>Google Street Panorama View</p>
                         </a>
                     </div>
             </div>
@@ -133,26 +133,26 @@
         </section>
         <!--EXPLORE STYLES START  -->
 
-        <section class="picture-explore section">
+         <section class="section explore section-background-dark"> <!--//возьмо сделать одельный модификатор section--background-dark -->
             <div class="container">
-                <nav class="picture-explore__list">
-                    <div class="picture-explore__left">
+                <nav class="explore__list">
+                    <div class="explore__left">
                         <h2 class="section-title section-title--white">picture explore</h2>
-                        <div class="picture-explore-typography">
+                        <div class="explore-typography">
                             <p>
                                 Las Meninas is a 1656 painting by Diego Velázquez, the leading<br> artist of the Spanish
                                 Golden Age.
                             </p>
-                            <p>It was cleaned in 1984 to remove a <span class="picture-explore-typography__pick-out">"yellow veil"</span>of dust that had<br> gathered since the previous restoration in the 19th century.
+                            <p>It was cleaned in 1984 to remove a <span class="explore-typography__pick-out">"yellow veil"</span>of dust that had<br> gathered since the previous restoration in the 19th century.
                             </p>
                             <p>The cleaning provoked furious protests, not because the picture had<br> been damaged in
                                 any way, but because it looked different.</p>
                         </div>
                     </div>
-                    <div class="picture-explore__picture-explore-compare picture-explore-compare">
-                        <img class="picture-explore-compare__image" src="assets/img/rectangle.png" alt="встреча"
+                    <div class="explore-compare">
+                        <img class="explore-compare__image" src="assets/img/rectangle.png" alt="встреча"
                             width="720" height="700">
-                        <img class="picture-explore-compare__scroll-bar" src="assets/svg/explore slider.svg"
+                        <img class="explore-compare__scroll-bar" src="assets/svg/explore slider.svg"
                             alt="ходунок" width="39" height="700">
                     </div>
                 </nav>
@@ -161,53 +161,54 @@
 
         <!--  VIDEO  STYLES START  -->
 
-        <section class="section journey-video">
+        <section class="section video">
             <div class="container">
-                <div class="journey-video__list">
+                <div class="video__list">
                     <div class="section-title section-title--gold"> Video journey</div>
-                    <div class="journey-video__description">
+                    <div class="video__description">
                         Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
                     </div>
                 </div>
-                <div class="journey-video__journey-video-slider journey-video-slider ">****************
-                    <div class="journey-video-slider__main-preview">
-                        <div class="journey-video-slider__screen-player">
-                            <img class="journey-video-slider__play-svg" src="assets/svg/play.svg" alt="кнопка play"  width="220" height="220">
-                            <img class="journey-video-slider__picture" src="assets/img/video-journey.jpg" alt="экран"  width="1440" height="650">
-                        </div>
-                        <img class="journey-video-slider__panel-control-player" src="assets/img/video-journey-player.png" alt=""  width="1440" height="85">
+                <div class="video__review"> <!--блок перенести слайдер-->
+                    <div class="video__screen-player">
+                        <img class="video__play-svg" src="assets/svg/play.svg" alt="кнопка play"  width="220" height="220">
+                        <img class="video__picture" src="assets/img/video-journey.jpg" alt="экран"  width="1440" height="650">
                     </div>
-                    <div class="journey-video__journey-video-preview journey-video-slider-preview ">
-                        <ul class="journey-video-slider-preview__list">
-                            <li class="journey-video-slider-preview__item">
-                                <img class="journey-video-slider-preview__picture" src="assets/img/Video slide item.jpg" alt="видео" width="452" height="254">
-                            </li>
-                            <li class="journey-video-slider-preview__item">
-                                <img class="journey-video-slider-preview__picture" src="assets/img/Video slide item (1).jpg" alt="видео" width="452" height="254">
-                            </li>
-                            <li class="journey-video-slider-previw__item">
-                                <img class="journey-video-slider-preview__picture" src="assets/img/Video slide item (2).jpg" alt="видео" width="452" height="254">
-                            </li>
-                        </ul>
-                        <ul class="journey-video-slider-preview__journey-video-slider-preview-navigation journey-video-slider-preview-navigation">
-                            <li class="journey-video-slider-preview-navigation__arrow">
-                                <button class="journey-video-slider-preview-navigation__button-arrow">
-                                    <img src="assets/svg/Vector (Stroke_left).svg" alt="перемотка-svg"  width="10" height="12">
-                                </button>
-                            </li>
-                            <li class="journey-video-slider-preview-navigation__button journey-video-slider-preview-navigation__button--active"></li>
-                            <li class="journey-video-slider-preview-navigation__button"></li>
-                            <li class="journey-video-slider-preview-navigation__button"></li>
-                            <li class="journey-video-slider-preview-navigation__button"></li>
-                            <li class="journey-video-slider-preview-navigation__button"></li>
-                            <li class="journey-video-slider-preview-navigation__arrow">
-                                <button class="journey-video-slider-preview-navigation__button-arrow">
-                                    <img src="assets/svg/Vector (Stroke_right).svg" alt="перемотка-svg"  width="10" height="12">
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>        
+                    <img class="video__panel-control-player" src="assets/img/video-journey-player.png" alt=""  width="1440" height="85">
+                </div>
+                <div class="slider theme-slider-video">
+                    <ul class="slides"><!-- поменять как ввернех сладере-->
+                        <li class="slides__item"> <!--slide--> 
+                            <img class="journey-video-slider__picture" src="assets/img/Video slide item.jpg"
+                             alt="видео"  width="452" height="254"> <!--slide__picture-->
+                        </li>
+                        <li class="slides__item">
+                            <img class="journey-video-slider__picture"
+                                src="assets/img/Video slide item (1).jpg" alt="видео" width="452" height="254">
+                        </li>
+                        <li class="slides__item">
+                            <img class="journey-video-slider__picture"
+                                src="assets/img/Video slide item (2).jpg" alt="видео" width="452" height="254">
+                        </li>
+                    </ul>
+                  
+                    <ul class="nav">
+                        <li class="nav__item nav__item--left"> <!--nav-item nav-item--arrow-left-->
+                            <button class="nav__button-arrow"> 
+                                <img src="assets/svg/Vector (Stroke_left).svg" alt="перемотка-svg"  width="10" height="12">
+                            </button>
+                        </li>
+                        <li class="nav__button nav__button--active"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__button"></li> <!--nav-item nav-item--button-->
+                        <li class="nav__button"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__item nav__item--right"><button class="nav__button-arrow"><img
+                                    src="assets/svg/Vector (Stroke_right).svg" alt="перемотка-svg"  width="10" height="12">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

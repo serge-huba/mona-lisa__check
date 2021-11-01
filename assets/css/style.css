@@ -57,10 +57,13 @@ body {
     margin: 25px 0 75px 0;
 }
 
+.section-background-dark {
+    background-color: #030303;
+}
+
 /******************************************HEADER***********************************/
 
 .header{
-    background-color: #030303;
     padding: 59px 0 58px 0;
 }
 
@@ -83,12 +86,12 @@ body {
     color: #ffffff;
 }
 
+.top-menu__link {
+    color:#ffffff;
+}
+
 
 /******************************************WElCOME STYLES START***********************/
-
-.welcome {
-    background-color: #030303;
-}
 
 .welcome__background {
     position: relative;
@@ -98,7 +101,7 @@ body {
     padding: 150px 0 272px 0;
 }
 
-.slider-item__title {
+.slider.theme-slider-welcome .slide__title {
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -109,7 +112,7 @@ body {
     color: #ffffff;
  }
 
- .slider-item__description {
+ .slider.theme-slider-welcome .slide__description {
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 2px;
@@ -117,7 +120,7 @@ body {
     margin: 25px 0 75px 0;
  }
 
- .slider-item__button {
+ .slider.theme-slider-welcome .slide__button {
     display: block;
     width: 360px;
     height: 75px;
@@ -133,7 +136,7 @@ body {
     padding: 25px;
 }
 
-.slider__controls {
+.slider.theme-slider-welcome .controls {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -145,13 +148,13 @@ body {
     align-items: center;
 }
 
-.slider-scoreboard {
+.slider.theme-slider-welcome .scoreboard {
     display: flex;
     width: 76px;
     justify-content: space-between;
 }
 
-.slider-pagination {
+.slider.theme-slider-welcome .pagination {
     display: flex;
     justify-content: space-between;
     width: 180px;
@@ -159,14 +162,14 @@ body {
     margin: 0px 55px 0 55px;
 }
 
-.slider-arrows {
+.slider.theme-slider-welcome .nav {
     display: flex;
     width: 80px;
     justify-content: space-between;
 
 }
 
-.slider-pagination__button {
+.slider.theme-slider-welcome .pagination__button {
     width: 16px;
     height: 16px;
     padding: 0;
@@ -174,48 +177,46 @@ body {
     background: #ffffff;
 }
 
-.top-menu__link {
-    color:#ffffff;
-}
 
-.slider-arrows__item {
+
+.slider.theme-slider-welcome .nav__item {
     padding: 0;
     border: 0;
     background-color: transparent;
 }
 
-.slider-scoreboard__item {
+.slider.theme-slider-welcome .scoreboard__item {
     font-size: 22px;
     line-height: 40px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.slider-scoreboard__separator {
+.slider.theme-slider-welcome .scoreboard__separator {
     width: 2px;
     height: 18px;
     background-color: #FFFFFF;
     align-self: center;
 }
 
- .slider-pagination__button--active{
+.slider.theme-slider-welcome .pagination__button--active{
     background: #D2B183;;
 }
 
  /* VIRTUAL-TOUR STYLES START *********************************/
 
-.virtual-tour__list {
+.visiting__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: -78px 0;
 }
 
- .virtual-tour__virtual-tour-item {
+ .visiting-item {
     margin: 78px 0;
 }
 
-.virtual-tour-item__title {
+.visiting-item__title {
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
@@ -227,18 +228,18 @@ body {
     color: #000000;
 }
 
-.virtual-tour-item__link {
+.visiting-item__link {
     display: block;
 }
 
-.virtual-tour-item__description {
+.visiting-item__description {
     color: #000000;
     font-size: 22px;
     line-height: 26px;
     margin: 10px 0 0 0;
 }
 
-.virtual-tour__title::after {
+.visiting__title::after {
     content: "";
     width: 300px;
     height: 2px;
@@ -251,41 +252,26 @@ body {
 
 /*   EXPLORE  STYLES START************************************************************* */
 
-.picture-explore {
-    background-color: #030303;
-}
-
-.picture-explore__list {
+.explore__list {
     display: flex;
 }
 
-.picture-explore__picture-explore-compare {
+.explore-compare {
+    padding-left: 60px;
     position: relative;
 }
 
-.picture-explore-compare {
-    padding-left: 60px;
-}
-.picture-explore__title::after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: #710707;
-    display: block;
-    margin: 25px 0 75px 0;
-}
-
-.picture-explore-compare__image {
+.explore-compare__image {
     margin-top: 10px;
 }
 
-.picture-explore-compare__scroll-bar {
+.explore-compare__scroll-bar {
     position: absolute;
     right: 255px;
     top: 11px;
 }
 
-.picture-explore-typography p {
+.explore-typography p {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -295,7 +281,7 @@ body {
     margin-bottom: 25px;
 }
 
-.picture-explore__pick-out {
+.explore-typography__pick-out {
     color: #CAAA7D;
 }
 
@@ -303,7 +289,7 @@ body {
 
 /*   VIDEO  STYLES START *****************************************************************/
 
-.journey-video__list {
+.video__list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
@@ -316,7 +302,7 @@ body {
     width: 606px;
 }
 
-.journey-video-slider__panel-control-player {
+.video__panel-control-player {
      margin-bottom: 40px;
 }
 
@@ -324,11 +310,11 @@ body {
     background: url("../svg/play.svg");
    
 } */
-.journey-video-slider__screen-player {
+.video__screen-player {
     position: relative;
 }
 
-.journey-video-slider__play-svg {
+.video__play-svg {
     position: absolute;
     display: block;
     left: calc(50% - 110px);
@@ -336,7 +322,7 @@ body {
 
 }
 
-.journey-video__description {
+.video__description {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -347,13 +333,13 @@ body {
     padding: 5px 0 0 0;
 }
 
-.journey-video-slider-preview__list {
+.slider.theme-slider-video .slides {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.journey-video-slider-preview-navigation {
+.slider.theme-slider-video .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -361,7 +347,7 @@ body {
     margin: 0 auto;
 }
 
-.journey-video-slider-preview-navigation__button {
+.slider.theme-slider-video .nav__button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -369,11 +355,11 @@ body {
     cursor: pointer;
 }
 
-.journey-video-slider-preview-navigation__button--active {
+.slider.theme-slider-video .nav__button--active {
     background-color: #333333;
 }
 
-.journey-video-slider-preview-navigation__button-arrow {
+.slider.theme-slider-video .nav__button-arrow {
     border: 0;
     background-color: transparent;
 }
