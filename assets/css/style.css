@@ -382,6 +382,7 @@
  }
 
  .art-gallery__list {
+     position: relative;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -402,6 +403,15 @@
      margin-top: 0;
  }
 
+ .linear-gradient {
+     position: absolute;
+     width: 1440px;
+    height: 360px;
+    left: 0%;
+    bottom: 0%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+ }
+
  /* ***************************ART GALLERY STYLES END******************************** */
 
  /**************************** TICKETS  STYLES START *******************************  */
@@ -419,9 +429,9 @@
      margin-bottom: 50px;
  }
 
- /*radio button styles - START*************************************************/
+ /*radio button styles - start*************************************************/
 
- .ticket-type-elements {
+ .radio-button {
      display: block;
      position: relative;
      padding-left: 40px;
@@ -438,13 +448,13 @@
      margin-bottom: 25px;
  }
 
- .ticket-type-elements__input {
+ .radio-button__input {
      position: absolute;
      opacity: 0;
      cursor: pointer;
  }
 
- .ticket-type-elements__big-circle {
+ .radio-button__big-circle {
      position: absolute;
      top: 0;
      left: 0;
@@ -454,7 +464,7 @@
      border-radius: 50%;
  }
 
- .ticket-type-elements__inner-circle {
+ .radio-button__inner-circle {
      position: absolute;
      top: 3px;
      left: 3px;
@@ -464,7 +474,7 @@
      border-radius: 50%;
  }
 
- .ticket-type-elements__input:checked~.ticket-type-elements__inner-circle::after {
+ .radio-button__input:checked~.radio-button__inner-circle::after {
      content: "";
      display: block;
      position: absolute;
@@ -475,11 +485,14 @@
      border-radius: 50%;
      background: #000000;
  }
-/* radio button styles - END************************************/
-/*amount column - START*****************************************/
+/* radio button styles - end************************************/
+/*amount column - start*****************************************/
 
  .amount {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
  }
 
  .amount__title {
@@ -494,6 +507,8 @@
      font-size: 22px;
      line-height: 26px;
      margin-bottom: 15px;
+     align-self: flex-start;
+     padding-left: 25px;
  }
 
  .amount-age {
@@ -519,21 +534,15 @@
 
  .amount__button {
      border: 0;
-     padding-left: ;
+     padding: 0px;
+     width: 30%;
+     height: 100%;
      background: transparent;
      font-weight: normal;
      font-size: 32px;
      line-height: 37px;
      text-align: center;
      color: #000000;
- }
-
- .amount__button--plus {
-     padding-right: 14px;
- }
-
- .amount__button--minus {
-     padding-left: 14px;
  }
 
  /*-стили для сброса "стрелочек" у input[type="number"] - START*/
@@ -555,14 +564,12 @@
      font-size: 28px;
      line-height: 33px;
      letter-spacing: 1.65px;
-     /* margin-top: 50px; */
+     margin-top: 50px;
+     margin-bottom: 52px;
      color: #000000;
  }
 
-.by-now {
-    position: absolute;
-    top: 393px;
-    left: -25px;
+.button {
     width: 175px;
     height: 50px;
     font-size: 22px;
@@ -573,7 +580,20 @@
     background: #000000;
     border-radius: 2px;
     border: 0;
+    /* margin-left: -24px; */
     /* font-family: Roboto;
     font-style: normal;
     font-weight: 300; при задании этих стилей шрифт реагирует, хотя они прописаны в  body*/ 
+ }
+
+ .form-order {
+     display: flex;
+     width: 50%;
+     justify-content: space-between;
+     padding-left: 60px;
+ }
+ .parallax__holl {
+     height: 400px;
+     background: url("../img/parallax.jpg") 50%/cover no-repeat rgb(211, 183, 183);
+     background-attachment: fixed;
  }
