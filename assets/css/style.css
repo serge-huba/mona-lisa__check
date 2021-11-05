@@ -592,8 +592,69 @@
      justify-content: space-between;
      padding-left: 60px;
  }
+
+
  .parallax__holl {
      height: 400px;
-     background: url("../img/parallax.jpg") 50%/cover no-repeat rgb(211, 183, 183);
+     background: url("../img/parallax.jpg") 50%/100% 400px no-repeat;
      background-attachment: fixed;
  }
+
+ /* CONTACTS  STYLES START *****************************************************  */
+  
+ .contacts {
+    height: 963px;
+    background: #ffffff;
+    padding: 75px 0 60px 0;
+}
+
+  .contacts__title {
+    font-size: 80px;
+    line-height: 90px;
+    color: #9D8665;
+}
+
+.contacts-section__title::after {
+    content: "";
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0;
+left: 0; */
+    /* width: 92%; */
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    /* right: 0;*/
+    margin: 25px 0 75px 0;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-information__title {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+margin-bottom: 36px;
+
+
+color: #000000;
+}
+
+.contacts__information {
+    padding-top: 10px;
+}
+
+.contacts-information__item {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*   CONTACTS  STYLES END */
