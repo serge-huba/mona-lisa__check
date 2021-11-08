@@ -444,7 +444,7 @@
      color: #000000;
  }
 
- .ticket-type__ticket-type-elements {
+ .radio-button--margin-bottom {
      margin-bottom: 25px;
  }
 
@@ -532,7 +532,7 @@
      border: 0;
  }
 
- .amount__button {
+ .button-plus-minus {
      border: 0;
      padding: 0px;
      width: 30%;
@@ -586,13 +586,19 @@
     font-weight: 300; при задании этих стилей шрифт реагирует, хотя они прописаны в  body*/ 
  }
 
+ .tickets-right {
+     width: 50%;
+ }
+
  .form-order {
      display: flex;
-     width: 50%;
      justify-content: space-between;
      padding-left: 60px;
  }
 
+ /**************************** TICKETS  STYLES END *******************************  */
+ 
+ /**************************** PARALLAX STYLES START ******************************  */
 
  .parallax__holl {
      height: 400px;
@@ -600,7 +606,9 @@
      background-attachment: fixed;
  }
 
- /* CONTACTS  STYLES START *****************************************************  */
+/* PARALLAX STYLES END *****************************************************  */
+ 
+/* CONTACTS  STYLES START *****************************************************  */
   
  .contacts {
     height: 963px;
@@ -658,3 +666,68 @@ color: #000000;
 }
 
 /*   CONTACTS  STYLES END */
+
+/* FOOTER STYLES START */
+.footer {
+    position: relative;
+    height: 392px;
+    background-color: rgb(0, 0, 0);
+    padding: 75px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin-bottom: 103px;
+}
+
+.footer-top__logo {
+    width: 340px;
+}
+
+.footer-top__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+}
+
+.footer-top__social {
+    display: flex;
+    width: 734px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.footer-top__social-link {
+    margin-left: 24px;
+}
+
+.footer-top__item-link {
+font-size: 22px;
+line-height: 50px;
+letter-spacing: 2px;
+color: #FFFFFF;
+}
+
+.line-separate {
+    position: absolute;
+    top: 265px;
+    height: 3px;
+    width: 100%;
+    background: #666666;
+}
+
+.footer-bottom__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom__item,
+.footer-top__item {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
