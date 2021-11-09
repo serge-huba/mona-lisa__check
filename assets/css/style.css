@@ -488,14 +488,14 @@
 /* radio button styles - end************************************/
 /*amount column - start*****************************************/
 
- .amount {
+ .form-order__amount {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
  }
 
- .amount__title {
+ .form-order__title {
      text-align: right;
      font-weight: bold;
      font-size: 28px;
@@ -503,7 +503,8 @@
      margin-bottom: 25px;
  }
 
- .amount__description {
+ .form-order__description {
+     display: block;
      font-size: 22px;
      line-height: 26px;
      margin-bottom: 15px;
@@ -511,26 +512,29 @@
      padding-left: 25px;
  }
 
- .amount-age {
+ .form-order-age {
      display: flex;
      justify-content: space-between;
      align-items: center;
      border: 3px solid #000000;
      width: 150px;
      height: 50px;
+ }
+
+ .form-order__form-order-age {
      margin-bottom: 10px;
  }
 
- .amount-age--margin-bottom {
+ .form-order__form-order-age--margin-bottom {
      margin-bottom: 50px;
  }
 
- .amount__instead-minus {
+ /* .amount__instead-minus {
      width: 18px;
      height: 3px;
      background: #000000;
      border: 0;
- }
+ } */
 
  .button-plus-minus {
      border: 0;
@@ -551,7 +555,7 @@
      margin: 0;
  }
  
-.amount__number {
+.form-order__number {
      all: unset;
      text-align: center;
      font-size: 22px;
@@ -559,7 +563,7 @@
      text-align: center;
  }
 
- .amount__price {
+ .form-order__price {
      font-weight: bold;
      font-size: 28px;
      line-height: 33px;
@@ -586,7 +590,7 @@
     font-weight: 300; при задании этих стилей шрифт реагирует, хотя они прописаны в  body*/ 
  }
 
- .tickets-right {
+ .tickets__right {
      width: 50%;
  }
 
@@ -665,6 +669,10 @@ color: #000000;
     color: #000000;
 }
 
+.contacts-information__link {
+    color: black;
+}
+
 /*   CONTACTS  STYLES END */
 
 /* FOOTER STYLES START */
@@ -678,23 +686,19 @@ color: #000000;
 .footer-top {
     display: flex;
     justify-content: space-between;
-    height: 150px;
-    margin-bottom: 103px;
+    margin-bottom: 50px;
 }
 
-.footer-top__logo {
-    width: 340px;
-}
 
 .footer-top__nav {
     display: flex;
     justify-content: space-between;
-    width: 366px;
+    width: 590px;
+    padding-right: 247px;
 }
 
 .footer-top__social {
     display: flex;
-    width: 734px;
     justify-content: flex-end;
     align-items: flex-end;
     padding-bottom: 15px;
@@ -712,22 +716,24 @@ color: #FFFFFF;
 }
 
 .line-separate {
-    position: absolute;
-    top: 265px;
+    width: 600%;
+    position: relative;
+    left: -250%;
     height: 3px;
-    width: 100%;
+    margin-bottom: 50px;
     background: #666666;
 }
 
-.footer-bottom__list {
+.footer-cooperating__list {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-bottom__item,
+.footer-cooperating__item,
 .footer-top__item {
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 2px;
     color: #FFFFFF;
 }
+

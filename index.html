@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <a href="#">
+                    <a class="logo" href="#">
                         <img src="assets/svg/Logo.svg" alt="logo-louvre" width="199" height="33">
                     </a>
                 </div>
@@ -249,13 +249,13 @@
             <div class="container">
                 <h2 class="section-title section-title--gold">Buy tickets</h2>
                 <div class="tickets__list">
-                    <div class="tickets-left">
+                    <div class="tickets__left">
                         <img src="assets/img/Rectangle-1.png" alt="knight and children">
                     </div>
-                    <div class="tickets-right">
+                    <div class="tickets__right">
                         <form class="form-order" action="#" method="post">
-                            <div class="ticket-type">
-                                <h3 class="ticket-type__title ">Ticket Type</h3>
+                            <div class="form-order__ticket-type">
+                                <h3 class="form-order__title ">Ticket Type</h3>
                                 <label class="radio-button radio-button--margin-bottom">
                                     <input class="radio-button__input" type="radio" checked name="radio">Permanent exhibition
                                     <span class="radio-button__big-circle"></span>
@@ -272,29 +272,29 @@
                                     <span class="radio-button__inner-circle"></span>
                                 </label>
                             </div>
-                            <div class="amount">
-                                <h3 class="amount__title ">Amounte</h3>
-                                <div class="amount__description"><label for="amount__number-18">Basic 18+</label></div>
-                                <div class="amount-age">
+                            <div class="form-order__amount">
+                                <h3 class="form-order__title ">Amounte</h3>
+                                <label class="form-order__description" for="form-order__number-18">Basic 18+</label>
+                                <div class="form-order-age form-order__form-order-age">
                                     <button class="button-plus-minus" type="button">
                                         <img src="assets/svg/minus.svg" alt="minus" width="18" height="38">
                                     </button>
-                                    <input class="amount__number" type="number" min="0" max="20" value="1" id="amount__number-18">
+                                    <input class="form-order__number" type="number" min="0" max="20" value="1" id="form-order__number-18">
                                     <button class="button-plus-minus" type="button">
                                         <img src="assets/svg/plus.svg" alt="plus" width="19" height="38">
                                     </button>
                                 </div>
-                                <div class="amount__description"><label for="amount__number-65">Senior 65+</label></div>
-                                <div class="amount-age amount-age--margin-bottom">
+                                <label class="form-order__description" for="form-order__number-65">Senior 65+</label>
+                                <div class="form-order-age form-order__form-order-age--margin-bottom">
                                     <button class="button-plus-minus" type="button">
                                         <img src="assets/svg/minus.svg" alt="minus" width="18" height="38">
                                     </button>
-                                    <input class="amount__number" type="number" min="0" max="20" value="1" id="amount__number-65">
+                                    <input class="form-order__number" type="number" min="0" max="20" value="1" id="form-order__number-65">
                                     <button class="button-plus-minus" type="button">
                                         <img src="assets/svg/plus.svg" alt="plus" width="19" height="38">
                                     </button>
                                 </div>
-                                <div class="amount__price">
+                                <div class="form-order__price">
                                     Total &#8364<span>220</span>
                                 </div>
                                 <button class="button" type="submit">Buy Now</button>
@@ -314,9 +314,9 @@
                 <div class="contacts__list">
                     <div class="contacts-information contacts__contacts-information">
                         <h2 class="contacts-information__title">Palais Royal<br>Musee du Louvre</h2>
-                        <p class="contacts-information__item"><a href="#">address:75001 Paris, France</a></p>
-                        <p class="contacts-information__item"><a href="#">phone:+33(0) 1 40 20 50 50</a></p>
-                        <p class="contacts-information__item"><a href="#">mail:info@louvre.fr</a></p>
+                        <p class="contacts-information__item"><a class="contacts-information__link" href="#">address:75001 Paris, France</a></p>
+                        <p class="contacts-information__item"><a class="contacts-information__link" href="tel:+330140205050">phone:+33(0) 1 40 20 50 50</a></p>
+                        <p class="contacts-information__item"><a class="contacts-information__link" href="mailto:info@louvre.fr">mail:info@louvre.fr</a></p>
                     </div>
                     <div class="contacts__picture">
                         <img src="assets/img/map_contacts.png" alt="map" width="960" height="620">
@@ -324,13 +324,16 @@
                 </div>
             </div>
         </section>
+        <!--  CONTACTS  STYLES END******************************************* -->
     </main>
+
+    <!--  FOOTER STYLES START******************************************* -->
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-top__logo">
-                    <a href="/" class="footer-top__logo-link">
-                        <img src="assets/svg/Logo.svg" alt="louvre" class="footer-top__logo-pic">
+                    <a href="#" class="logo">
+                        <img src="assets/svg/Logo.svg" alt="louvre">
                     </a>
                 </div>
                 <nav class="footer-top__nav">
@@ -365,15 +368,16 @@
                    <a href=""><img src="assets/svg/Pinterest.svg" alt="" class="footer-top__social-link"></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <ul class="footer-bottom__list">
-                    <li class="footer-bottom__item">&#169 2021</li>
-                    <li class="footer-bottom__item">The Rolling Scopes School</li>
-                    <li class="footer-bottom__item">Username</li>
-                </ul>
+            <div class="line-separate"></div>
+            <div class="footer-cooperating">
+                <div class="footer-cooperating__list">
+                    <div class="footer-cooperating__item">&#169 2021</div>
+                    <div class="footer-cooperating__item">The Rolling Scopes School</div>
+                    <div class="footer-cooperating__item">Username</div>
+                </div>
             </div>
         </div>
-        <div class="line-separate"></div>
+        
     </footer>
 </body>
 
