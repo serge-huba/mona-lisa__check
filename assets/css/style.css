@@ -683,39 +683,39 @@ color: #000000;
     padding: 75px 0;
 }
 
-.footer-top {
+.footer__top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
 
-.footer-top__nav {
+.bottom-menu {
     display: flex;
     justify-content: space-between;
     width: 590px;
     padding-right: 247px;
 }
 
-.footer-top__social {
+.social {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-bottom: 15px;
 }
 
-.footer-top__social-link {
+.social__link {
     margin-left: 24px;
 }
 
-.footer-top__item-link {
+.bottom-menu__link {
 font-size: 22px;
 line-height: 50px;
 letter-spacing: 2px;
 color: #FFFFFF;
 }
 
-.line-separate {
+.footer__separate {
     width: 600%;
     position: relative;
     left: -250%;
