@@ -1,4 +1,4 @@
- /*ALL STYLES START************************************************************** */
+ /*********************ALL STYLES START************************************************************** */
 
  html {
      box-sizing: border-box;
@@ -57,10 +57,6 @@
      margin: 25px 0 75px 0;
  }
 
- /* .section-background-dark {
-    background-color: #030303;
-} */
-
  .section--no-padding {
      padding: 0;
  }
@@ -69,7 +65,9 @@
      background-color: #030303;
  }
 
- /******************************************HEADER***********************************/
+ /**************************************ALL STYLES END********************************************/
+
+ /******************************************HEADER STYLES START***********************************/
 
  .header {
      padding: 59px 0 58px 0;
@@ -98,7 +96,9 @@
      color: #ffffff;
  }
 
- /******************************************WElCOME STYLES START***********************/
+ /******************************************HEADER STYLES END**************************************/
+
+ /******************************************WElCOME STYLES START***********************************/
 
  .welcome__background {
      position: relative;
@@ -207,9 +207,9 @@
      background: #D2B183;
      ;
  }
- /* *****************************************WElCOME STYLES START********************** */
+ /* *****************************************WElCOME STYLES END************************************* */
 
- /* ************************** VIRTUAL-TOUR STYLES START ******************************** */
+ /* ************************** VIRTUAL-TOUR STYLES START ****************************************** */
 
  .visiting__list {
      display: flex;
@@ -254,9 +254,9 @@
      margin: 9px 0 10px 0;
  }
 
- /* *******************VIRTUAL-TOUR STYLES END*************************** */
+ /* *************************************VIRTUAL-TOUR STYLES END*************************** */
 
- /* *****************EXPLORE  STYLES START***************************** */
+ /* ************************************EXPLORE  STYLES START***************************** */
 
  .explore__list {
      display: flex;
@@ -291,9 +291,9 @@
      color: #CAAA7D;
  }
 
- /* ***************************************** EXPLORE  STYLES END******************** */
+ /* ***************************************** EXPLORE  STYLES END******************************** */
 
- /* *************************************** VIDEO  STYLES START ********************** */
+ /* *************************************** VIDEO  STYLES START ********************************** */
 
  .video__list {
      display: flex;
@@ -364,9 +364,9 @@
      background-color: transparent;
  }
 
- /******************************VIDEO  STYLES END*************************************** */
+ /******************************VIDEO  STYLES END************************************************* */
 
- /* ***************************ART GALLERY STYLES START******************************** */
+ /* ***************************ART GALLERY STYLES START****************************************** */
 
  .art-gallery .section-title::after {
      content: "";
@@ -412,9 +412,9 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
  }
 
- /* ***************************ART GALLERY STYLES END******************************** */
+ /* ***************************ART GALLERY STYLES END****************************************** */
 
- /**************************** TICKETS  STYLES START *******************************  */
+ /**************************** TICKETS  STYLES START ******************************************  */
 
  .tickets__list {
      display: flex;
@@ -429,7 +429,7 @@
      margin-bottom: 50px;
  }
 
- /*radio button styles - start*************************************************/
+ /*radio button styles - start*/
 
  .radio-button {
      display: block;
@@ -485,8 +485,9 @@
      border-radius: 50%;
      background: #000000;
  }
-/* radio button styles - end************************************/
-/*amount column - start*****************************************/
+/* radio button styles - end*/
+
+/*amount column - start*/
 
  .form-order__amount {
     position: relative;
@@ -529,13 +530,6 @@
      margin-bottom: 50px;
  }
 
- /* .amount__instead-minus {
-     width: 18px;
-     height: 3px;
-     background: #000000;
-     border: 0;
- } */
-
  .button-plus-minus {
      border: 0;
      padding: 0px;
@@ -549,11 +543,11 @@
      color: #000000;
  }
 
- /*-стили для сброса "стрелочек" у input[type="number"] - START*/
+ /*-стили для сброса "стрелочек" у input[type="number"] - start*/
  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
      -webkit-appearance: none;
      margin: 0;
- }
+ }/*end*/
  
 .form-order__number {
      all: unset;
@@ -584,7 +578,6 @@
     background: #000000;
     border-radius: 2px;
     border: 0;
-    /* margin-left: -24px; */
     /* font-family: Roboto;
     font-style: normal;
     font-weight: 300; при задании этих стилей шрифт реагирует, хотя они прописаны в  body*/ 
@@ -600,9 +593,9 @@
      padding-left: 60px;
  }
 
- /**************************** TICKETS  STYLES END *******************************  */
+ /************************************* TICKETS  STYLES END *******************************************  */
  
- /**************************** PARALLAX STYLES START ******************************  */
+ /***************************************** PARALLAX STYLES START *****************************************  */
 
  .parallax__holl {
      height: 400px;
@@ -610,9 +603,9 @@
      background-attachment: fixed;
  }
 
-/* PARALLAX STYLES END *****************************************************  */
+/*************************** PARALLAX STYLES END *****************************************************  */
  
-/* CONTACTS  STYLES START *****************************************************  */
+/************************** CONTACTS  STYLES START *****************************************************  */
   
  .contacts {
     height: 963px;
@@ -628,15 +621,9 @@
 
 .contacts-section__title::after {
     content: "";
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0;
-left: 0; */
-    /* width: 92%; */
     height: 3px;
     background-color: #710707;
     display: block;
-    /* right: 0;*/
     margin: 25px 0 75px 0;
 }
 
@@ -651,10 +638,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 33px;
-/* identical to box height */
 margin-bottom: 36px;
-
-
 color: #000000;
 }
 
@@ -673,9 +657,9 @@ color: #000000;
     color: black;
 }
 
-/*   CONTACTS  STYLES END */
+/***************************   CONTACTS  STYLES END**************************** */
 
-/* FOOTER STYLES START */
+/* ****************************FOOTER STYLES START*******************************/
 .footer {
     position: relative;
     height: 392px;
@@ -688,7 +672,6 @@ color: #000000;
     justify-content: space-between;
     margin-bottom: 50px;
 }
-
 
 .bottom-menu {
     display: flex;
@@ -709,10 +692,10 @@ color: #000000;
 }
 
 .bottom-menu__link {
-font-size: 22px;
-line-height: 50px;
-letter-spacing: 2px;
-color: #FFFFFF;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
 }
 
 .footer__separate {
@@ -730,7 +713,7 @@ color: #FFFFFF;
 }
 
 .footer-cooperating__item,
-.footer-top__item {
+.bottom-menu__item {
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 2px;
