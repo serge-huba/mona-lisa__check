@@ -1,0 +1,648 @@
+/*********************ALL STYLES START************************************************************** */
+
+html {
+    box-sizing: border-box;
+ }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+body {
+    min-width: 1440px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 75px 0 75px 0;
+}
+
+.section-title {
+    font-family: Forum;
+    /* font-style: normal;
+    font-weight: normal; */
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.section-title--gold {
+    position: relative;
+    color: #9D8665;
+}
+
+.section-title--white {
+    font-size: 80px;
+    line-height: 90px;
+    color: #FFFFFF;
+}
+
+.section-title::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
+
+.section--no-padding {
+    padding: 0;
+}
+
+.section--background-dark {
+    background-color: #030303;
+}
+
+ /**************************************ALL STYLES END********************************************/
+
+ /******************************************HEADER STYLES START***********************************/
+
+.header {
+    padding: 59px 0 58px 0;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.top-menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+}
+.top-menu__item {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.top-menu__link {
+    color: #ffffff;
+}
+/******************************************HEADER STYLES END**************************************/
+/******************************************WElCOME STYLES START***********************************/
+.welcome__background {
+    position: relative;
+    background-image: url("../img/mona_lisa.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 150px 0 272px 0;
+}
+.slider.theme-slider-welcome .slide__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.slider.theme-slider-welcome .slide__description {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 25px 0 75px 0;
+}
+.slider.theme-slider-welcome .slide__button {
+    display: block;
+    width: 360px;
+    height: 75px;
+    background-color: #710707;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+}
+.slider.theme-slider-welcome .controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 120px;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider.theme-slider-welcome .scoreboard {
+    display: flex;
+    width: 76px;
+    justify-content: space-between;
+}
+.slider.theme-slider-welcome .pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    height: 16px;
+    margin: 0px 55px 0 55px;
+}
+.slider.theme-slider-welcome .nav {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.slider.theme-slider-welcome .pagination__button {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+}
+.slider.theme-slider-welcome .nav__item {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+.slider.theme-slider-welcome .scoreboard__item {
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.slider.theme-slider-welcome .scoreboard__separator {
+    width: 2px;
+    height: 20px;
+    background-color: #FFFFFF;
+    align-self: center;
+}
+.slider.theme-slider-welcome .pagination__button--active {
+    background: #D2B183;
+    ;
+}
+/* *****************************************WElCOME STYLES END************************************* */
+/* ************************** VIRTUAL-TOUR STYLES START ****************************************** */
+.visiting__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -78px 0;
+}
+.visiting-item {
+    margin: 78px 0;
+}
+.visiting-item__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+    color: #000000;
+}
+.visiting-item__link {
+    display: block;
+}
+.visiting-item__description {
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 10px 0 0 0;
+}
+.visiting__title::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: #710707;
+    display: block;
+    margin: 9px 0 10px 0;
+}
+/* *************************************VIRTUAL-TOUR STYLES END*************************** */
+/* ************************************EXPLORE  STYLES START***************************** */
+.explore__list {
+    display: flex;
+}
+.explore-compare {
+    padding-left: 60px;
+    position: relative;
+}
+.explore-compare__image {
+    margin-top: 10px;
+}
+.explore-compare__scroll-bar {
+    position: absolute;
+    right: 255px;
+    top: 11px;
+}
+.explore-typography p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.explore-typography__pick-out {
+    color: #CAAA7D;
+}
+/* ***************************************** EXPLORE  STYLES END******************************** */
+/* *************************************** VIDEO  STYLES START ********************************** */
+.video__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.video .section-title::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
+.slider.theme-slider-video .picture {
+    margin-bottom: 40px;
+}
+.slider.theme-slider-video .screen-player {
+    position: relative;
+}
+.slider.theme-slider-video .play-svg {
+    position: absolute;
+    display: block;
+    left: calc(50% - 110px);
+    top: calc(50% - 160px);
+}
+.video__description {
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+    width: 720px;
+    padding: 5px 0 0 0;
+}
+.slider.theme-slider-video .slider__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.slider.theme-slider-video .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+}
+.slider.theme-slider-video .nav__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999999;
+    cursor: pointer;
+}
+.slider.theme-slider-video .nav__button--active {
+    background-color: #333333;
+}
+.slider.theme-slider-video .nav__arrow-button {
+    border: 0;
+    background-color: transparent;
+}
+/******************************VIDEO  STYLES END************************************************* */
+/* ***************************ART GALLERY STYLES START****************************************** */
+.art-gallery .section-title::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 0;
+}
+.art-gallery .section-title {
+    margin-bottom: 75px;
+}
+.art-gallery__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1572px;
+    overflow: hidden;
+}
+.art-gallery__column {
+    display: flex;
+    flex-direction: column;
+}
+.art-gallery__picture {
+    margin-top: 30px;
+}
+.art-gallery__picture--no-margin {
+    margin-top: 0;
+}
+.linear-gradient {
+    position: absolute;
+    width: 1440px;
+   height: 360px;
+   left: 0%;
+   bottom: 0%;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+/* ***************************ART GALLERY STYLES END****************************************** */
+/**************************** TICKETS  STYLES START ******************************************  */
+.tickets__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.ticket-type__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 50px;
+}
+/*radio button styles - start*/
+.radio-button {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #000000;
+}
+.radio-button--margin-bottom {
+    margin-bottom: 25px;
+}
+
+.radio-button__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radio-button__big-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+.radio-button__inner-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 12px;
+    width: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.radio-button__input:checked~.radio-button__inner-circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #000000;
+}
+/* radio button styles - end*/
+/*amount column - start*/
+.form-order__amount {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.form-order__title {
+    text-align: right;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 25px;
+}
+.form-order__description {
+    display: block;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+    padding-left: 25px;
+}
+.form-order-age {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #000000;
+    width: 150px;
+    height: 50px;
+}
+.form-order__form-order-age {
+    margin-bottom: 10px;
+}
+.form-order__form-order-age--margin-bottom {
+    margin-bottom: 50px;
+}
+.button-plus-minus {
+    border: 0;
+    padding: 0px;
+    width: 30%;
+    height: 100%;
+    background: transparent;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+}
+/*-стили для сброса "стрелочек" у input[type="number"] - start*/
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}/*end*/
+
+.form-order__number {
+    all: unset;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.form-order__price {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 1.65px;
+    margin-top: 50px;
+    margin-bottom: 52px;
+    color: #000000;
+}
+
+.button {
+    width: 175px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 2px;
+    border: 0;
+    /* font-family: Roboto;
+    font-style: normal;
+    font-weight: 300; при задании этих стилей шрифт реагирует, хотя они прописаны в  body*/ 
+ }
+
+.tickets__right {
+    width: 50%;
+}
+
+.form-order {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+}
+
+ /************************************* TICKETS  STYLES END *******************************************  */
+ 
+ /***************************************** PARALLAX STYLES START *****************************************  */
+
+.parallax__holl {
+    height: 400px;
+    background: url("../img/parallax.jpg") 50%/100% 400px no-repeat;
+    background-attachment: fixed;
+}
+
+/*************************** PARALLAX STYLES END *****************************************************  */
+ 
+/* CONTACTS  STYLES START *****************************************************  */
+.contacts {
+    height: 963px;
+    background: #ffffff;
+    padding: 75px 0 60px 0;
+}
+
+.contacts__title {
+    font-size: 80px;
+    line-height: 90px;
+    color: #9D8665;
+}
+
+.contacts-section__title::after {
+    content: "";
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-information__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 36px;
+    color: #000000;
+}
+
+.contacts__information {
+    padding-top: 10px;
+}
+
+.contacts-information__item {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contacts-information__link {
+    color: black;
+}
+
+/***************************   CONTACTS  STYLES END**************************** */
+
+/* ****************************FOOTER STYLES START*******************************/
+.footer {
+    position: relative;
+    height: 392px;
+    background-color: rgb(0, 0, 0);
+    padding: 75px 0;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 590px;
+    padding-right: 247px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.social__link {
+    margin-left: 24px;
+}
+
+.bottom-menu__link {
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.footer__separate {
+    width: 600%;
+    position: relative;
+    left: -250%;
+    height: 3px;
+    margin-bottom: 50px;
+    background: #666666;
+}
+
+.footer-cooperating__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-cooperating__item,
+.bottom-menu__item {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+

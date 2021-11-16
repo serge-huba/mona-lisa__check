@@ -1,0 +1,204 @@
+/*********************ALL STYLES START*************************** */
+
+html {
+    box-sizing: border-box;
+ }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+body {
+    min-width: 1440px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 75px 0 75px 0;
+}
+
+.section-title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+        display: block;
+        margin: 25px 0 75px 0;
+    }
+}
+
+.section-title--gold {
+    position: relative;
+    color: #9D8665;
+}
+
+.section-title--white {
+    font-size: 80px;
+    line-height: 90px;
+    color: #FFFFFF;
+}
+
+
+
+.section--no-padding {
+    padding: 0;
+}
+
+.section--background-dark {
+    background-color: #030303;
+}
+
+ /**************************************ALL STYLES END**********************************/
+
+ /******************************************HEADER STYLES START*************************/
+
+.header {
+    padding: 59px 0 58px 0;
+}
+    .header__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header__logo {
+        padding-right: 466px;
+    }
+
+    .top-menu__list {
+        display: flex;
+        justify-content: space-between;
+        width: 775px;
+    }
+
+    .top-menu__item {
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+
+    .top-menu__link {
+        color: #ffffff;
+    }
+          
+
+
+/******************************************HEADER STYLES END**************************************/
+
+
+//АДАПТАЦИЯ САЙТА 
+
+@media screen and (max-width: 1024px) {
+    
+    /*********************ALL STYLES START*************************** */
+
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 984px;
+    margin: 0 20px;
+}
+
+.section {
+    padding: 60px 0 60px 0;
+}
+
+.section--no-padding {
+    padding: 0;
+}
+
+.section-title {
+    font-size: 50px;
+}
+
+.section-title::after {
+    margin: 20px 0 60px 0;
+}
+
+    /*********************ALL STYLES END*************************** */
+
+    /******************************************HEADER STYLES START*************************/
+
+.header {
+    padding: 48px 0 48px 0;
+}
+
+.top-menu {
+    display: none;
+}
+.burger {
+    display: block;
+}
+
+.header__wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    padding-right: 0;
+}
+
+  /******************************************HEADER STYLES END*************************/
+} // @media screen 1024-end
+
+
+
+
+@media screen and (max-width: 768px) {
+    /*********************ALL STYLES START*************************** */
+
+.container {
+    max-width: 728px;
+}
+
+ /******************************************HEADER STYLES START*************************/
+.header {
+    padding: 35px 0 35px 0;
+}
+
+} // @media screen 768-end
+
+
+
+
+@media screen and (max-width: 420px) {
+    /*********************ALL STYLES START*************************** */
+
+.container {
+    max-width: 380px;
+}
+
+ /******************************************HEADER STYLES START*************************/
+.header {
+    padding: 35px 0 35px 0;
+}
+
+ } // @media screen 420-end
+
