@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  min-width: 1440px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -20,8 +19,15 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 .section {
@@ -37,6 +43,12 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-title {
+    font-size: 50px;
+  }
 }
 
 .section-title::after {
@@ -70,7 +82,61 @@ body {
 /**************************************ALL STYLES END**********************************/
 /******************************************HEADER STYLES START*************************/
 .header {
-  padding: 59px 0 58px 0;
+  padding: 58px 0 58px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 48px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 35px 0;
+  }
+}
+
+.logo__img {
+  width: 199px;
+  height: 33px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo__img {
+    width: 189px;
+    height: 33px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo__img {
+    width: 199px;
+    height: 41px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo__img {
+    width: 131px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
 }
 
 .header__wrapper {
@@ -79,14 +145,12 @@ body {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-}
-
-.burger {
-  display: none;
-}
-
-.header__logo {
-  padding-right: 466px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-menu__list {
@@ -111,71 +175,4 @@ body {
 }
 
 /******************************************HEADER STYLES END**************************************/
-@media screen and (max-width: 1024px) {
-  /*********************ALL STYLES START*************************** */
-  body {
-    min-width: 320px;
-  }
-  .container {
-    max-width: 984px;
-    margin: 0 20px;
-  }
-  .section {
-    padding: 60px 0 60px 0;
-  }
-  .section--no-padding {
-    padding: 0;
-  }
-  .section-title {
-    font-size: 50px;
-  }
-  .section-title::after {
-    margin: 20px 0 60px 0;
-  }
-  /*********************ALL STYLES END*************************** */
-  /******************************************HEADER STYLES START*************************/
-  .header {
-    padding: 48px 0 48px 0;
-  }
-  .top-menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .header__wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header__logo {
-    padding-right: 0;
-  }
-  /******************************************HEADER STYLES END*************************/
-}
-
-@media screen and (max-width: 768px) {
-  /*********************ALL STYLES START*************************** */
-  .container {
-    max-width: 728px;
-  }
-  /******************************************HEADER STYLES START*************************/
-  .header {
-    padding: 35px 0 35px 0;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  /*********************ALL STYLES START*************************** */
-  .container {
-    max-width: 380px;
-  }
-  /******************************************HEADER STYLES START*************************/
-  .header {
-    padding: 35px 0 35px 0;
-  }
-}
 /*# sourceMappingURL=style.css.map */
