@@ -229,9 +229,7 @@ body {
 }
 
 .slider.theme-slider-welcome .slide__button {
-    display: block;
-    width: 360px;
-    height: 75px;
+    display: inline-block;
     background-color: #710707;
     font-size: 22px;
     line-height: 26px;
@@ -240,15 +238,14 @@ body {
     color: #FFFFFF;
     border-radius: 15px;
     border: none;
-    text-decoration: none;
-    padding: 25px;
+    padding: 25px 64px;
+    
     @include media-laptop {
-        width: 300px;
-        height: 60px;
         font-size: 20px;
         line-height: 23px;
         padding: 21px 43px;
     }
+    
     @include media-tablet {
         display: none;
     }
