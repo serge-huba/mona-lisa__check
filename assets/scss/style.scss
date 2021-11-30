@@ -1,4 +1,4 @@
-@import "ather-scss/media";
+@import "_media";
 
 /*********************ALL STYLES START*************************** */
 
@@ -83,8 +83,6 @@ body {
     }
     
     &--white {
-    font-size: 80px;
-    line-height: 90px;
     color: #FFFFFF;
     }
 
@@ -402,14 +400,18 @@ body {
 /* *****************************************WElCOME STYLES END************************************* */
 
 /* ************************** VIRTUAL-TOUR STYLES START ****************************************** */
+.visiting__hidden {
+    overflow: hidden;
+}
 
 .visiting__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -30px -75px -30px;
+
     @include media-laptop {
         padding: 0 54px;
-        margin: 0 0 -60px 0;
+        margin: 0;
     }
     @include media-tablet{
         padding: 0 28px;
@@ -422,9 +424,9 @@ body {
 }
 
 .visiting-item {
-    width: calc(100% / 3);
+    width: calc(100% / 3);  
     padding: 0 30px;
-    margin: 0 0 75px 0;
+    margin: 0 0px 75px 0px;
     @include media-laptop {
         width: calc(100% / 2);
         padding: 0 54px;
@@ -491,11 +493,11 @@ body {
         font-size: 20px;
         line-height: 23px;
     }
-    @include media-laptop {
+    @include media-tablet {
         font-size: 18px;
         line-height: 21px;
     }
-    @include media-laptop {
+    @include media-mobile {
         font-size: 16px;
         line-height: 19px;
     }
@@ -505,49 +507,88 @@ body {
 
 /* ************************************EXPLORE  STYLES START***************************** */
 
-// .explore__list {
-//     display: flex;
-// }
+.explore__list {
+    display: flex;
+    @include media-laptop {
+        flex-direction: column;
+    }
+}
 
-// .explore-compare {
-//     padding-left: 60px;
-//     position: relative;
-// }
+.explore__left {
+    width: 50%;
+    padding-right: 60px;
+    @include media-laptop {
+        width: 100%;
+        margin-bottom: 62px;
+        padding-right: 0;
+    }
+    @include media-tablet {
+        margin-bottom: 0;
+    }
+}
 
-// .explore-compare__image {
-//     padding-top: 10px;
-//     box-sizing: content-box;
-// }
+.explore-typography {
+    @include media-tablet {
+        display: none;
+    }
+}
 
-// .explore-compare__scroll-bar {
-//     position: absolute;
-//     right: 255px;
-//     top: 11px;
-// }
+.explore-typography p {
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    @include media-laptop {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 0;
+    }
+}
 
-// .explore-typography p {
-//     font-family: Roboto;
-//     font-style: normal;
-//     font-weight: 300;
-//     font-size: 22px;
-//     line-height: 38px;
-//     color: #FFFFFF;
-//     margin-bottom: 25px;
-// }
+.explore-typography__carry {
+    @include media-laptop {
+       display: none;
+    }
+}
 
-// // .explore-typography__third {
-// //     display: none;
-// //     @include media-laptop {
-// //         display: none;
-// //     }
-// // }
+.explore-typography__pick-out {
+    color: #CAAA7D;
+}
+.explore-compare {
+    width: 50%;
+    padding-top: 11px;
+    @include media-laptop {
+    padding-left: 0;
+    width: 100%;
+    }
+}
 
-// .explore-typography__pick-out {
-//     color: #CAAA7D;
-// }
+.explore__hidden {
+    position: relative;
+}
+
+.explore-compare__image {
+    width: 100%;
+    height: auto;
+    @include media-laptop {
+        display: block;
+        padding: 0 132px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    @include media-tablet {
+        padding: 0;
+    }
+}
+
+.explore-compare__scroll-bar {
+    position: absolute;
+    right: 36.2%;
+    top: 0;
+    height: 100%;
+    line-height: 0;
+}
+
+
 
 /* ***************************************** EXPLORE  STYLES END******************************** */
-
-
-
-
