@@ -399,8 +399,8 @@ body {
 
 /* *****************************************WElCOME STYLES END************************************* */
 
-/* ************************** VIRTUAL-TOUR STYLES START ****************************************** */
-.visiting__hidden {
+/* ************************** VISITING STYLES START ****************************************** */
+.visiting {
     overflow: hidden;
 }
 
@@ -456,7 +456,6 @@ body {
     line-height: 35px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #000000;
     @include media-laptop {
         font-size: 28px;
         line-height: 31px;
@@ -486,7 +485,6 @@ body {
 }
 
 .visiting-item__description {
-    color: #000000;
     font-size: 22px;
     line-height: 26px;
     @include media-laptop {
@@ -554,41 +552,177 @@ body {
 .explore-typography__pick-out {
     color: #CAAA7D;
 }
-.explore-compare {
+.explore-right {
+    position: relative;
     width: 50%;
-    padding-top: 11px;
-    @include media-laptop {
-    padding-left: 0;
-    width: 100%;
+    align-self: flex-start;
+        @include media-laptop {
+        width: 100%;
+        // margin: 0 auto;
     }
 }
 
-.explore__hidden {
-    position: relative;
-}
-
-.explore-compare__image {
+.explore-right__image {
     width: 100%;
     height: auto;
     @include media-laptop {
         display: block;
-        padding: 0 132px;
+        width: 720px;
+        // padding: 0 132px;
         margin: 0 auto;
         box-sizing: border-box;
     }
     @include media-tablet {
         padding: 0;
+        width: 100%;
     }
 }
 
-.explore-compare__scroll-bar {
+.explore-right__scroll-bar {
     position: absolute;
     right: 36.2%;
     top: 0;
     height: 100%;
     line-height: 0;
+    
 }
 
 
 
 /* ***************************************** EXPLORE  STYLES END******************************** */
+
+/* *************************************** VIDEO  STYLES START ********************************** */
+
+.video__list {                        //+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    @include media-laptop {
+        display: block;
+        margin-bottom: 40px;
+    }
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+}
+
+ .video .section-title {           //+
+    @include media-laptop {
+        margin-bottom: 40px;
+    }
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+}
+
+.video .section-title::after {  // +
+    width: 0%;
+}
+
+.video__description {             //+
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+    width: 720px;
+    padding: 5px 0 0 0;
+    @include media-laptop {
+        display: none;
+    }
+}
+
+.slider.theme-slider-video{       //+
+    overflow: hidden;
+}
+
+.slider.theme-slider-video .screen-player {  // +
+    position: relative;
+}
+
+.slider.theme-slider-video .picture {          // +
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 40px;
+    @include media-laptop {
+        margin-bottom: 20px;
+    }
+    @include media-tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.slider.theme-slider-video .play-svg {  //+
+    position: absolute;
+    display: block;
+    left: 42%;
+    top: 26%;
+    width: 15.28%;
+    height: auto;
+}
+
+.slider.theme-slider-video .slider__list {     //+
+    display: flex;
+    margin: 0 -21px 40px -21px;
+}
+
+.slider.theme-slider-video .slide {
+    width: calc(100% / 3);
+    padding: 0 21px;
+
+    &--hidden {
+        @include media-tablet {
+            display: none;
+        }
+
+    }
+    @include media-tablet {
+        width: calc(100% / 2);
+        padding: 0 10px;
+    }
+}
+
+
+
+.slider.theme-slider-video .slide__picture {      // +
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.slider.theme-slider-video .nav {  // +
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.slider.theme-slider-video .nav__button {  // +
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999999;
+    cursor: pointer;
+    margin: 0 10px;
+    @include media-tablet {
+        width: 10px;
+        height: 10px;
+    }
+    @include media-tablet {
+        width: 8px;
+        height: 8px;
+    }
+    
+}
+
+.slider.theme-slider-video .nav__button--active {
+    background-color: #333333;
+}
+
+.slider.theme-slider-video .nav__arrow-button {
+    border: 0;
+    background-color: transparent;
+}
+
+ /******************************VIDEO  STYLES END************************************************* */

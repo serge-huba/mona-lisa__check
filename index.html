@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-    <title>MonaLisa</title>
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>MonaLisa</title> -->
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -81,7 +82,6 @@
         <section class="section visiting">
             <div class="container">
                 <h2 class="section-title section-title--gold">virtual tour</h2>
-                <div class="visiting__hidden">
                     <div class="visiting__list">
                         <div class="visiting-item">
                             <a href="" class="visiting-item__link">
@@ -126,29 +126,75 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                
             </div>
         </section>
+        
         <!--EXPLORE STYLES START  -->
 
         <section class="section explore section--background-dark">
             <div class="container">
                 <nav class="explore__list">
                     <div class="explore__left">
-                        <h2 class="section-title section-title--white">picture explor</h2>
+                        <h2 class="section-title section-title--white">picture explore</h2>
                         <div class="explore-typography">
                             <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading<br class="explore-typography__carry"> artist of the Spanis Golden Age.</p>
                             <p>It was cleaned in 1984 to remove a <span class="explore-typography__pick-out">"yellow veil"</span>of dust that had<br class="explore-typography__carry"> gathered since the previous restoration in the 19th century.</p>
                         </div>
                     </div>
-                    <div class="explore-compare">
-                        <div class="explore__hidden">
-                            <img class="explore-compare__image" src="assets/img/rectangle.png" alt="встреча деток вельмож" width="720" height="700">
-                            <img class="explore-compare__scroll-bar" src="assets/svg/explore-slider.svg" alt="ходунок" width="39" height="700">
-                        </div>
+                    <div class="explore-right">
+                            <img class="explore-right__image" src="assets/img/rectangle.png" alt="встреча деток вельмож" width="720" height="700">
+                            <img class="explore-right__scroll-bar" src="assets/svg/explore-slider.svg" alt="ходунок" width="39" height="700">
                     </div>
                 </nav>
+            </div>
+        </section>
+        
+        <!--  VIDEO  STYLES START  -->
+
+        <section class="section video">
+            <div class="container">
+                <div class="video__list">
+                    <div class="section-title section-title--gold"> Video journey</div>
+                    <div class="video__description">
+                        Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+                    </div>
+                </div>
+                <div class="slider theme-slider-video">
+                    <div class="promo">
+                        <div class="screen-player">
+                            <img class="play-svg" src="assets/svg/play.svg" alt="кнопка play" width="220" height="220">
+                            <img class="picture" src="assets/img/art_gallery/promo.png" alt="экран" width="1440" height="650">
+                        </div>
+                    </div>
+                    <ul class="slider__list">
+                        <li class="slide">
+                            <img class="slide__picture" src="assets/img/Video-slide-item.jpg" alt="видео" width="452" height="254">
+                        </li>
+                        <li class="slide">
+                            <img class="slide__picture" src="assets/img/Video-slide-item-1.jpg" alt="видео" width="452" height="254">
+                        </li>
+                        <li class="slide slide--hidden">
+                            <img class="slide__picture" src="assets/img/Video-slide-item-2.jpg" alt="видео" width="452" height="254">
+                        </li>
+                    </ul>
+
+                    <ul class="nav">
+                        <li class="nav__arrow nav__arrow--left">
+                            <button class="nav__arrow-button">
+                                <img src="assets/svg/Vector-Stroke_left.svg" alt="перемотка-svg" width="10" height="12">
+                            </button>
+                        </li>
+                        <li class="nav__button nav__button--active"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__button"></li>
+                        <li class="nav__arrow nav__arrow--right"><button class="nav__arrow-button">
+                            <img src="assets/svg/Vector-Stroke_right.svg" alt="перемотка-svg" width="10" height="12">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

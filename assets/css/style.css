@@ -475,8 +475,8 @@ body {
 }
 
 /* *****************************************WElCOME STYLES END************************************* */
-/* ************************** VIRTUAL-TOUR STYLES START ****************************************** */
-.visiting__hidden {
+/* ************************** VISITING STYLES START ****************************************** */
+.visiting {
   overflow: hidden;
 }
 
@@ -549,7 +549,6 @@ body {
   line-height: 35px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 @media screen and (max-width: 1024px) {
@@ -589,7 +588,6 @@ body {
 }
 
 .visiting-item__description {
-  color: #000000;
   font-size: 22px;
   line-height: 26px;
 }
@@ -677,43 +675,40 @@ body {
   color: #CAAA7D;
 }
 
-.explore-compare {
+.explore-right {
+  position: relative;
   width: 50%;
-  padding-top: 11px;
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 1024px) {
-  .explore-compare {
-    padding-left: 0;
+  .explore-right {
     width: 100%;
   }
 }
 
-.explore__hidden {
-  position: relative;
-}
-
-.explore-compare__image {
+.explore-right__image {
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 1024px) {
-  .explore-compare__image {
+  .explore-right__image {
     display: block;
-    padding: 0 132px;
+    width: 720px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .explore-compare__image {
+  .explore-right__image {
     padding: 0;
+    width: 100%;
   }
 }
 
-.explore-compare__scroll-bar {
+.explore-right__scroll-bar {
   position: absolute;
   right: 36.2%;
   top: 0;
@@ -722,3 +717,157 @@ body {
 }
 
 /* ***************************************** EXPLORE  STYLES END******************************** */
+/* *************************************** VIDEO  STYLES START ********************************** */
+.video__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  .video__list {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video__list {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .video .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video .section-title {
+    margin-bottom: 20px;
+  }
+}
+
+.video .section-title::after {
+  width: 0%;
+}
+
+.video__description {
+  font-size: 22px;
+  line-height: 38px;
+  color: #000000;
+  width: 720px;
+  padding: 5px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .video__description {
+    display: none;
+  }
+}
+
+.slider.theme-slider-video {
+  overflow: hidden;
+}
+
+.slider.theme-slider-video .screen-player {
+  position: relative;
+}
+
+.slider.theme-slider-video .picture {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider.theme-slider-video .picture {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider.theme-slider-video .picture {
+    margin-bottom: 40px;
+  }
+}
+
+.slider.theme-slider-video .play-svg {
+  position: absolute;
+  display: block;
+  left: 42%;
+  top: 26%;
+  width: 15.28%;
+  height: auto;
+}
+
+.slider.theme-slider-video .slider__list {
+  display: flex;
+  margin: 0 -21px 40px -21px;
+}
+
+.slider.theme-slider-video .slide {
+  width: calc(100% / 3);
+  padding: 0 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider.theme-slider-video .slide--hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider.theme-slider-video .slide {
+    width: calc(100% / 2);
+    padding: 0 10px;
+  }
+}
+
+.slider.theme-slider-video .slide__picture {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider.theme-slider-video .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider.theme-slider-video .nav__button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #999999;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider.theme-slider-video .nav__button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider.theme-slider-video .nav__button {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.slider.theme-slider-video .nav__button--active {
+  background-color: #333333;
+}
+
+.slider.theme-slider-video .nav__arrow-button {
+  border: 0;
+  background-color: transparent;
+}
+
+/******************************VIDEO  STYLES END************************************************* */
